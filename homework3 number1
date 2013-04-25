@@ -1,0 +1,12 @@
+%cython
+#homework three number one cython
+cdef prime_factorstwo(int x):
+    count = 2
+    factors = list()
+    while count <= x:
+        if x % count == 0:
+            x /= count
+            factors.append(count)
+        else:
+            count += 1
+    return factors
