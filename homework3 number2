@@ -9,10 +9,4 @@ cdef sumsq(int n):
     sumsq = sum(lst)
     return sumsq
 
-import time
-t = time.time()
-sumsq(10000)
-print time.time()-t
 
-#initial time 5.99 ms per loop
-#cython time 2.62 ms
