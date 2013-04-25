@@ -21,8 +21,4 @@ cdef primes(long n):
                 i=i+1
                 m=2*i+3
     return [2]+[x for x in s if x]
-    
-import time
-t = time.time()
-primes(1000)
-print time.time() - t
+
