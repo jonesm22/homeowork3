@@ -1,0 +1,18 @@
+%cython
+
+#problem 5 cython
+
+import numpy
+import random
+cdef matr(int n, int m):
+    cdef int i
+    row = []
+    mat = []
+    for i in range(n):
+        row.append(round(random.uniform(1,8), 2))
+    for i in range(m):
+        mat.append(row)
+    mult = numpy.dot(mat,mat)
+    print mult
+    return mult
+    
