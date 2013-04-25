@@ -19,7 +19,3 @@ cdef det(A):
    x = numpy.linalg.det(A)
    return x 
 
-import time
-t = time.time()
-det(matr(4,4))
-print time.time() - t
